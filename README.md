@@ -54,7 +54,7 @@ To be updated as project progresses
 ## How to Run
 
 ### 1. Clone the repository
-git clone https://github.com/YOUR-USERNAME/credit-risk-modelling.git
+git clone https://github.com/anuragjaine/credit-risk-modelling.git
 cd credit-risk-modelling
 
 ### 2. Create and activate virtual environment

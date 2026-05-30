@@ -51,7 +51,7 @@ with st.sidebar:
     
     ---
     
-    **Created by:** [Your Name]  
+    **Created by:** Anurag Jain  
     **Institution:** IGIDR  
     **Program:** M.Sc. Economics (2025-2027)
     

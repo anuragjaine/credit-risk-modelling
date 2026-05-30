@@ -1,7 +1,7 @@
 
 """
 Credit Default Risk Prediction App
-Author: [Your Name]
+Author: Anurag Jain
 Project: M.Sc. Economics, IGIDR (2025-2027)
 """
 
@@ -22,8 +22,8 @@ st.set_page_config(
 # Load model (cached for speed)
 @st.cache_resource
 def load_model():
-    model = joblib.load("models/credit_risk_model.pkl")
-    with open("models/features.txt", "r") as f:
+    model = joblib.load("app/credit_risk_model.pkl")
+    with open("app/features.txt", "r") as f:
         features = f.read().strip().split("\n")
     return model, features
 

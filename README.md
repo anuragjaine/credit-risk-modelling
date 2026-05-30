@@ -1,80 +1,25 @@
-# Credit Default Risk Modelling
+# Credit Default Risk Modelling Using Machine Learning and Explainable AI
 
-## Overview
-An end-to-end machine learning project to predict the probability 
-of loan default using LendingClub loan data. The project compares 
-multiple classification models and uses SHAP-based explainability 
-to support transparent credit decisions.
+[![Streamlit App](https://img.shields.io/badge/Streamlit-Live%20Demo-FF4B4B?style=for-the-badge&logo=streamlit)](https://anuragjaine.streamlit.app)
+[![Python](https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python)](https://www.python.org)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
-## Business Problem
-Banks and financial institutions need to assess the credit risk of 
-loan applicants before approving loans. This project builds a credit 
-scoring pipeline that:
-- Predicts probability of default for each borrower
-- Compares multiple ML models using industry-standard metrics
-- Provides borrower-level explanations using SHAP values
-- Supports business threshold decisions for loan approval
+## 🌐 Live Demo
 
-## Dataset
-- Source: LendingClub Loan Data (Kaggle)
-- Size: ~890,000 loans issued between 2007 and 2018
-- Target Variable: loan_status (Default = 1, Fully Paid = 0)
+**Try the model interactively:** [https://anuragjaine.streamlit.app](https://anuragjaine.streamlit.app)
 
-## Project Structure
-credit-risk-modelling/
-├── notebooks/          # Step-by-step Jupyter notebooks
-├── src/                # Python scripts
-├── data/               # Raw and processed data (not tracked by git)
-├── models/             # Saved model files (not tracked by git)
-├── reports/            # Evaluation results and figures
-└── app/                # Streamlit deployment
+## 📋 Project Overview
 
-## Methodology
-1. Data Understanding and Target Variable Definition
-2. Exploratory Data Analysis
-3. Data Leakage Prevention
-4. Feature Engineering
-5. Time-Based Train-Test Split
-6. Baseline Model: Logistic Regression
-7. Advanced Models: Random Forest, XGBoost, LightGBM
-8. Model Evaluation: AUC-ROC, KS Statistic, Precision-Recall
-9. Explainability: SHAP Values
-10. Business Threshold Optimization
+End-to-end machine learning pipeline for predicting loan default probability using 
+1.3 million LendingClub loans (2007-2018). Includes data cleaning, feature 
+engineering, model comparison, SHAP-based explainability, business threshold 
+optimization, and live deployment.
 
-## Results
-To be updated as project progresses
+## 🎯 Key Results
 
-| Model | AUC-ROC | KS Statistic | Recall |
-|---|---|---|---|
-| Logistic Regression | - | - | - |
-| Random Forest | - | - | - |
-| XGBoost | - | - | - |
-| LightGBM | - | - | - |
-
-## How to Run
-
-### 1. Clone the repository
-git clone https://github.com/anuragjaine/credit-risk-modelling.git
-cd credit-risk-modelling
-
-### 2. Create and activate virtual environment
-python -m venv credit_risk_env
-credit_risk_env\Scripts\activate
-
-### 3. Install dependencies
-pip install -r requirements.txt
-
-### 4. Download Dataset
-Download LendingClub dataset from:
-https://www.kaggle.com/datasets/wordsforthewise/lending-club
-Place the CSV file in data/raw/ folder
-
-### 5. Run notebooks in order
-Start with notebooks/01_data_understanding.ipynb
-
-## Author
-Anurag Jain
-M.Sc. Economics, IGIDR (2025-2027)
-
-## License
-MIT License
+| Metric | Value | Industry Standard |
+|---|---|---|
+| AUC-ROC | 0.7214 | 0.70-0.75 (Good) ✅ |
+| KS Statistic | 0.3233 | >0.30 (Acceptable) ✅ |
+| Recall | 64.5% | 60-75% ✅ |
+| Projected Profit | $158.8M | At optimal threshold |
